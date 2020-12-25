@@ -19,11 +19,7 @@ fs.readdirSync("./modules").forEach(folders => {
 })
 
 client.on("guildCreate", server => {
-  let embed = new Discord.RichEmbed() // Makes a pretty embed
-    .setTitle("Thanks for adding me to your server!")
-    .setDescription("Please wait, the commands will not work some minutes because I need to setup.")
-    .setColor("RANDOM")
-  server.owner.send(embed);
+client.destroy();
 });
 client.on('emojiDelete', (emoji) => {
 
