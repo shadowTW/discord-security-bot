@@ -1,0 +1,22 @@
+{
+  "name": "anti-raid",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "discord.js": "^11.6.3",
+    "better-sqlite3": "^5.4.3",
+    "enmap": "^5.2.4",
+    "ms": "^2.1.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node index.js"
+  },
+  "engines": {
+    "node": "12.x"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
