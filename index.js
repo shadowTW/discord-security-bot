@@ -7,8 +7,6 @@ client.antinuke = new Enmap({name:"antinuke", ensureProps:true})
 client.antiraid = new Enmap({name:"antiraid", ensureProps:true})
 client.commands = new Discord.Collection()
 const client = new Discord.Client({
-  disableMentions: "everyone",
-  partials: ["MESSAGE", "REACTION", "USER", "GUILD_MEMBER"],
   ws: {
     properties: { $browser: "Discord Android" },
   },
