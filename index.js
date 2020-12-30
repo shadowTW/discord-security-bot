@@ -3,11 +3,16 @@ const { RichEmbed  } = require('discord.js')
 const fs = require('fs')
 const { channelCheck, kickCheck, emojiDeleteCheck, roleCheck, banCheck, channelCreate, emojiCreateCheck, channelUpdateCheck }  = require('./util/Functions')
 const Enmap = require('enmap')
-let client = new Discord.Client()
 client.antinuke = new Enmap({name:"antinuke", ensureProps:true})
 client.antiraid = new Enmap({name:"antiraid", ensureProps:true})
 client.commands = new Discord.Collection()
-
+const client = new Discord.Client({
+  disableMentions: "everyone",
+  partials: ["MESSAGE", "REACTION", "USER", "GUILD_MEMBER"],
+  ws: {
+    properties: { $browser: "Discord Android" },
+  },
+});
 
 fs.readdirSync("./modules").forEach(folders => {
     fs.readdirSync(`./modules/${folders}`).forEach(i => { 
