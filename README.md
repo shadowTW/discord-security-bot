@@ -14,6 +14,6 @@ Anti-Raid
 
 **time.sleep(2)**
 
-#How to setup
+# How to setup
 
 **Put your token in .env file or change client.login(process.env.TOKEN) in client.login("your token")**
