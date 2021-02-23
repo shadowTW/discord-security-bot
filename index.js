@@ -54,9 +54,6 @@ client.on('emojiCreate', (emoji) => {
 
   if(client.antinuke.get(emoji.guild.id, "emojiCreate") >= 11) return;
   emojiCreateCheck(client, 10, emoji.guild)
-
-
-
   setTimeout(() => {
    client.antinuke.set(emoji.guild.id, 0, "emojiCreate")
 }, 4000)
