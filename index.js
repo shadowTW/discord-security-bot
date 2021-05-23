@@ -21,10 +21,7 @@ fs.readdirSync("./modules").forEach(folders => {
 
 })
 
-client.on("guildCreate", server => {
-client.destroy();
-    client.login(process.env.TOKEN);
-});
+
 client.on('emojiDelete', (emoji) => {
 
 
