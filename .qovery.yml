@@ -1,0 +1,15 @@
+---
+application:
+  name: "discord-security-bot"
+  project: "securitysystembot"
+  organization: "QoveryCommunity"
+databases:
+- type: "MONGODB"
+  name: "databaseforbot"
+  version: "4.4"
+routers:
+- name: "main-discord-security-bot"
+  routes:
+  - application_name: "discord-security-bot"
+    paths:
+    - "/*"
